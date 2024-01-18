@@ -1,7 +1,7 @@
-# Exercise 1
-
-## Created by
-- Saini
+# Class 3
 
 ## Description
-- This is a recreation of the twitter login page
+Examples using
+- useEffect
+- useState
+- setInterval

@@ -1,8 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
-
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
+import Link from 'next/link'
+ 
 export default function Home() {
   return (
     <>
@@ -12,39 +13,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       <main className={`${styles.main}`}>
-        <div className={`${styles.Logo}`}>
-          <Image src="./images/twitterlogo.svg" alt="logo" width={400} height={400} />
-        </div>
-
-        <div className={`${styles.body}`}>
-          <h1 className={`${styles.h1}`}> Happening now</h1>
-          <h2 className={`${styles.h2}`}> Join Twitter today.</h2>
-
-          <button className={`${styles.googlebutton}`}> 
-          <Image className={`${styles.googlelogo}`} src="/images/googlelogo.png" alt="logo" width={20} height={20} />
-          Sign in with Google
-          </button>
-
-          <br></br>
-      
-          <button className={`${styles.applebutton}`}> 
-          <Image className={`${styles.applelogo}`} src="/images/applelogo.svg" alt="logo" width={20} height={25} />
-          Sign in with Apple
-          </button>
-
-          <p className={`${styles.or}`}>  ───────────── or ─────────────  </p>
-          <button className={`${styles.createbutton}`}> Create Account</button>
-          <p className={`${styles.terms}`}> By signing up, you agree to the <a href="#"> Terms of Service</a> and <br></br> <a href="#"> Privacy Policy</a>, including <a href="#"> Cookie Use</a>.</p>
-          <br></br>
-          <h3 className={`${styles.h3}`}> Already have an account?</h3>
-          <button className={`${styles.signinbutton}`}> Sign in</button>
-       
-
-        </div>
-
-
+        <Link href={'/ExampleOne'}>Example 1</Link>
+        <Link href={'/ExampleTwo'} >Example 2</Link>
+        <Link href={'/ExampleThree'} >Example 3</Link>
+        <Link href={'/ExampleFour'} >Example 4</Link>
+        <Link href={'/ExampleFive'} >Example 5</Link>
       </main>
+      <Footer />
     </>
   )
 }
